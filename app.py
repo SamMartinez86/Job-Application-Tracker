@@ -87,6 +87,6 @@ def add_job():
 
 # Step 11: Run the Application
 if __name__ == '__main__':
-    with app.app_context():
+    with app.app_context():  # Ensure application context is set
         db.create_all()
     app.run(debug=True)
